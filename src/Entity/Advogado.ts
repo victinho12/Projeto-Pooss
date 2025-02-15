@@ -13,6 +13,7 @@ const pool = new Pool({
 //exportando para outros arquivos
 export class Advogados {
     //atributos da classe
+  private id : number
   private nome: string;
   private Especialidade: string;
   private Email: string;
@@ -21,12 +22,14 @@ export class Advogados {
   
 //construtor da classe
   constructor(
+    id :number,
     nome: string,
     Especialidade: string,
     Email: string,
     Telefone: number,
     situacao: string
   ) {
+    this.id = id
     this.nome = nome;
     this.Especialidade = Especialidade;
     this.Email = Email;

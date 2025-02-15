@@ -1,15 +1,13 @@
 export class Cliente {
   private cpf: number;
   private nome: string;
-  private datanascimento: Date;
-  private horario: number;
+  private datanascimento: string;
   private observacoes: string; 
-  constructor(cpf: number, nome: string, datanascimento: Date, horario: number, observcoes: string) {
+  constructor(cpf: number, nome: string, datanascimento: string, observacoes: string) {
     this.cpf = cpf;
     this.nome = nome;
     this.datanascimento = datanascimento;
-    this.horario = horario;
-    this.observacoes = observcoes;
+    this.observacoes = observacoes;
   }
 
 
